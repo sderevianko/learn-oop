@@ -3,21 +3,22 @@ package Phone;
 import java.util.Objects;
 
 public class Phone {
+    private String number;
+    private String model;
+    private int weight;
 
-    public Phone(){
+    public Phone() {
     }
+
     public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
-    public Phone(String number, String model,int weight) {
+
+    public Phone(String number, String model, int weight) {
         this(number, model);
         this.weight = weight;
     }
-    private String number;
-    private String model;
-    private int weight;
-    //public int vars;
 
     public String receiveCall(String nameOfCaller) {
         return nameOfCaller;
@@ -27,29 +28,26 @@ public class Phone {
         this.number = number;
     }
 
-    /*static void sendMessage(String... vars) {
-        System.out.println(" : " + vars.length);
-
-        for(int i = 0; vars.; i++) {
-            System.out.println(" arg " + i + ": " + vars[i]);
-        }
-    }*/
-
     public String getNumber() {
         return number;
     }
+
     public String getModel() {
         return model;
     }
+
     public int getWeight() {
         return weight;
     }
+
     public void setNumber(String number) {
         this.number = number;
     }
+
     public void setModel(String model) {
         this.model = model;
     }
+
     public void setWeight(int weight) {
         this.weight = weight;
     }

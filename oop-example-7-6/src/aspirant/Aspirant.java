@@ -4,12 +4,21 @@ import student.Student;
 
 public class Aspirant extends Student {
     private int numberOfScientificArticles = 7;
+
     public void getScholarship(double averageMark){
         if (averageMark == 5) {
-            scholarship = 200;
+            setScholarship(200);
         } else {
-            scholarship = 180;
+            setScholarship(180);
         }
-        System.out.println(scholarship);
+        System.out.println(getScholarship());
+    }
+
+    public int getNumberOfScientificArticles() {
+        return numberOfScientificArticles;
+    }
+
+    public void setNumberOfScientificArticles(int numberOfScientificArticles) {
+        this.numberOfScientificArticles = numberOfScientificArticles;
     }
 }

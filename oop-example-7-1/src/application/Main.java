@@ -12,9 +12,6 @@ public class Main {
         System.out.println("Phone model = " + num.getModel());
         System.out.println("Phone weight = " + num.getWeight());
         System.out.print("Calling " + num2.receiveCall("John"));
-
         num.receiveCall("Anna","380965445568");
-
-
     }
 }
